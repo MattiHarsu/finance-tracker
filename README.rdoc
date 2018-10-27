@@ -1,2 +1,2 @@
-This is the repository for the first finance-tracker app of the Complete Ruby on Rails Developer Course.
+This is the finance tracker app from the Complete Ruby on Rails Developer course.
 
