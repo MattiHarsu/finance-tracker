@@ -3,3 +3,13 @@
 - Route --> search_stocks
 
 - Controller -> action -stock_controller.rb search_stocks
+
+----------------------------------------------------
+
+Stock restrictions:
+
+- Users can track max 10 stocks
+
+- Same stock cannot be tracked twice
+
+
