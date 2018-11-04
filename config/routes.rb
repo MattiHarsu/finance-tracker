@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   # first_name & last_name modifications
   #devise_for :users
   devise_for :users, :controllers => { :registrations => "user/registrations"}
+  resources :users, only: [:show]
+  resources :friendships
   #
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -12,6 +14,7 @@ Rails.application.routes.draw do
   get 'search_stocks', to: 'stocks#search'
   resources :user_stocks, only: [:create, :destroy]
   get 'my_friends', to: 'users#my_friends'
+  get 'search_friends', to: 'users#search'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
